@@ -72,7 +72,6 @@ def start_logging():
             display_work_log()
             start_time = datetime.datetime.now()
         while True:
-            start_time = datetime.datetime.now()
             duration_thread = threading.Thread(target=display_duration, args=(start_time,), daemon=True)
             duration_thread.start()
             print('\n' + Fore.GREEN + Style.BRIGHT + "Press Enter to end task...")
