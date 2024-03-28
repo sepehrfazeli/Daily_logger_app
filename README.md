@@ -23,7 +23,8 @@ To start logging a work session, simply run the script. You will be prompted to 
 You can install the required Python packages using pip:
 
 ```bash
-pip install prettytable colorama
+pip install prettytable
+pip install colorama
 ```
 
 ## Code Structure
