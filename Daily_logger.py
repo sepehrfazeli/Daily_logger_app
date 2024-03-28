@@ -58,7 +58,7 @@ def start_logging():
             minutes = int((total_seconds % 3600) // 60)
             seconds = int(total_seconds % 60)
             duration_str = f"{hours:02}:{minutes:02}:{seconds:02}"
-            print(Fore.CYAN + f"\rCurrent duration: {duration_str}", end='')
+            print(Fore.CYAN + f"\rCurrent task: {duration_str}", end='')
             time.sleep(1)
     try:
         if os.path.exists(last_end_time_file_path):  # If the file with the last end time exists
